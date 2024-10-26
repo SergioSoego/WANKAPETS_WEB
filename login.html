@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Login</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script>
+    localStorage.removeItem("email");
+    function setEmail() {
+            var emailValue = document.getElementById("email").value;
+            localStorage.setItem("email", emailValue);
+        }
+  </script>
+</head>
+<body>
+
+  <section class="main_container">
+    <section class="flex1">
+     
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="logo">
+          <img src="imagenes/logo2.png" alt="Amazon Logo"/>
+        </div>
+        <h1>Iniciar sesión</h1>
+        <form action="BACK/verify_login.php" method="POST" onsubmit="setEmail()">
+          <div class="input-group">
+            <label for="email">E-mail o celular</label>
+            <input type="email" id="email" name="email"/>
+          </div>
+          <button type="submit">Continuar</button>
+        </form>
+        <div class="info">
+          Al continuar, aceptas las <a href="#">Condiciones de uso</a> y el <a href="#">Aviso de privacidad</a> de Amazon.
+        </div>
+      
+      </div>
+      <div class="separator"> 
+        <span>¿Eres nuevo?</span>
+      </div>
+      <a href="registro.html" class="new-account-button">Crea tu cuenta de WANKA PETS</a>
+    </section>
+    <section class="flex2">
+
+    </section>
+  </section>
+
+  </body>
+ 
+</body>
+</html>

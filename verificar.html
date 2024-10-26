@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar dirección de correo electrónico - Amazon</title>
+    <link rel="stylesheet" href="css/verificar.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var storedEmail = localStorage.getItem("email"); 
+            if (storedEmail) {
+                var emailElement = document.querySelector(".email");
+                emailElement.textContent = storedEmail; 
+            }
+        });
+
+        function handleVerification() {
+            var code = document.querySelector(".code-input").value;
+            var email = localStorage.getItem("email");
+
+            console.log("Sending verification request:", { email: email, code: code });
+
+            fetch('BACK/verificar_codigo.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email, code: code })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Received response:", data);
+                if (data.success) {
+                    alert("Código verificado correctamente. Cuenta creada.");
+                    window.location.href = "index.php";
+                } else {
+                    alert("Código incorrecto. Por favor, intenta de nuevo.");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</head>
+<body>
+    <section class="flex1">
+        <div class="logo">
+            <img src="" alt=""/>
+        </div>
+    </section>
+    <div class="container">
+        <h2 class="title">Verificar dirección de correo electrónico</h2>
+        <p>Para verificar tu correo electrónico, hemos enviado un código a <span class="email">correo@example.com</span> (<a href="#" class="change-email">Cambiar</a>)</p>
+        <b><p>Introducir código</p></b>
+        <input type="text" class="code-input">
+        <div class="button-container">
+            <button class="button" onclick="handleVerification()">Crea tu cuenta de Amazon</button>
+        </div>
+        <div class="code1">
+            <p>Al crear una cuenta, aceptas las <a href="#" class="terms">Condiciones de Uso</a> y el <a href="#" class="privacy">Aviso de Privacidad</a> de amazon.com.</p>
+        </div>
+        <div class="code2">
+            <a href="#" class="volver">Volver a enviar código</a>
+        </div>
+    </div>
+    <section class="flex2">
+        <div class="links">
+            <a href="#" class="help">Ayuda</a> | <a href="#" class="terms">Condiciones de Uso</a> | <a href="#" class="privacy">Aviso de Privacidad</a>
+            
+        </div>
+    </section>
+</body>
+</html>

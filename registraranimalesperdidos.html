@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registra a tu mascota perdida</title>
+    <link rel="stylesheet" href="css/registraranimalesperdidos.css">
+
+
+</head>
+<body>
+<section class="main_container">
+    <section class="flex1">
+    </section>
+    
+    <section class="flex2">
+        <div class="container">    
+            <div class="logo">
+                <img src="imagenes/logo2.png" alt=" Logo"/>
+            </div>
+            <h1>Registra a tu mascota perdida</h1>
+            <a>Unicamente para los distritos El Tambo, Chilca y Huancayo</a>
+            <form action="BACK/insertarregistroanimalesperdidos.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nombre">Su nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo_mascota">Tipo de mascota</label>
+                    <select id="tipo_mascota" name="tipo_mascota" required>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                    </select>
+                </div>                
+                <div class="form-group">
+                    <label for="color">Su color</label>
+                    <input type="text" id="color" name="color" required>
+                </div>
+                <div class="form-group">
+                    <label for="raza">¿Cuál es su raza?</label>
+                    <input type="text" id="raza" name="raza" required>
+                </div>
+                <div class="form-group">
+                    <label for="distrito">¿En qué distrito?</label>
+                    <select id="distrito" name="distrito" required>
+                        <option value="El Tambo">El Tambo</option>
+                        <option value="Chilca">Chilca</option>
+                        <option value="Huancayo">Huancayo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dirección">Dirección en la que lo vio por última vez</label>
+                    <input type="text" id="dirección" name="dirección" required>
+                </div>
+                <div class="form-group">
+                    <label for="foto">Foto de la mascota</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" >
+                </div>
+                <div class="form-group">
+                    <label for="fecha_perdida">Fecha en la que se perdió</label>
+                    <input type="date" id="fecha_perdida" name="fecha_perdida" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hora_perdida">Hora en la que se perdió</label>
+                    <input type="time" id="hora_perdida" name="hora_perdida" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Continuar</button>
+                </div>
+            </form>
+             
+        </div>
+    </section>
+    <section class="flex3">
+    </section>
+</section>
+</body>
+</html>

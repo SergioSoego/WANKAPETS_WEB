@@ -1,0 +1,125 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quienes somos</title>
+    <link rel="stylesheet" href="css/quienesomos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var nombreElement = document.getElementById("nombre");
+            var storedNombre = "<?php echo isset($_SESSION['nombre']) ? $_SESSION['nombre'] : ''; ?>";
+            if (storedNombre) {
+                nombreElement.textContent = storedNombre;
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+<header>
+    <section class="general">
+        <section class="nav1">
+
+            <div class="nav2">
+                <ul>
+                    <a href="index.php">Inicio</a>
+                    <a href=" Quienesomos.html">Quienes somos</a>
+                    <a href="">Contactanos</a>
+                    <a href="Adoptar.php">Adoptar</a>
+                    <a href="registraranimalesperdidos.html">Registrar Mascotas Perdidas</a>
+                    <a href="AnimalesPerdidos.html">Mascotas Perdidas</a>
+    
+                </ul>
+            </div>
+            <div class="user-options">
+                <div class="user">
+                    <a href="login.html">Iniciar Sesion</a>
+                </div>
+            </div>
+        </section>
+    
+</section>
+</header>
+
+<main>
+    <section class="banner">
+        <section class="products">
+            <h2>¿Quiénes somos?</h2>
+            <div class="text-section">
+                <p>
+                    Somos un equipo de estudiantes del décimo ciclo de la carrera de Ingeniería de Sistemas e Informática en la Universidad Continental. Nos encontramos desarrollando un <strong>SISTEMA WEB PARA LA RECUPERACIÓN Y ADOPCIÓN DE MASCOTAS EN LA CIUDAD DE HUANCAYO - 2024</strong>, como parte de nuestro curso Taller de Investigación 2. Nuestro equipo está compuesto por tres apasionados por la tecnología y el bienestar animal, y creemos firmemente en el poder de la innovación para conectar a las mascotas perdidas con sus dueños, así como fomentar la adopción responsable.
+                </p>
+                <p>
+                    Nuestro objetivo es ofrecer una plataforma eficiente, accesible y fácil de usar, donde los dueños de mascotas y los refugios puedan colaborar para recuperar y dar un nuevo hogar a los animales perdidos. Con una combinación de nuestras habilidades técnicas y un fuerte compromiso con el bienestar animal, trabajamos para crear una solución que marque una diferencia real.
+                </p>
+            </div>
+        </section>
+    </section>
+
+    <section class="products">
+        <h2>Nuestra Misión</h2>
+        <div class="text-section">
+            <p>
+                Facilitar la recuperación de mascotas perdidas y promover la adopción responsable a través de la tecnología, creando una comunidad segura y colaborativa.
+            </p>
+        </div>
+        
+        <h2>Nuestra Visión</h2>
+        <div class="text-section">
+            <p>
+                Ser la plataforma líder en Huancayo para la recuperación de mascotas y adopción responsable, generando un impacto positivo en las vidas de los animales y sus dueños.
+            </p>
+        </div>
+        
+    </section>
+
+    <section class="products">
+        <h2>Conoce a Nuestro Equipo</h2>
+        <div class="team-member">
+            <img src="imagenes/integrante1.jpg" alt="Integrante 1">
+            <h4>Sanchez Taipe Jordan Geralmy</h4>
+            <p>Especialista en desarrollo web y manejo de bases de datos.</p>
+        </div>
+        <div class="team-member">
+            <img src="imagenes/integrante2.png" alt="Integrante 2">
+            <h4>Chiclla Orihuela, Geraldhine Mayormi </h4>
+            <p>Encargado del diseño de interfaces y experiencia de usuario.</p>
+        </div>
+        <div class="team-member">
+            <img src="imagenes/integrante3.png" alt="Integrante 3">
+            <h4>Soto Egoavil Sergio Aldair</h4>
+            <p>Especialista en diseño y desarrollo web.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Nuestra Historia</h2>
+        <div class="text-section">
+            <p>
+                El proyecto nació de la preocupación que sentimos por el aumento de mascotas perdidas en nuestras comunidades. Conscientes de la necesidad de un sistema que facilite la búsqueda y recuperación de mascotas, decidimos aplicar nuestros conocimientos en tecnología para crear una solución efectiva. Desde entonces, hemos trabajado arduamente en el desarrollo de esta plataforma, con el objetivo de impactar de manera positiva tanto a los animales como a las personas que los aman.
+            </p>
+        </div>
+        
+    </section>
+    
+</main>
+
+<footer>
+    <div class="footer-links">
+        <a href="#">Condiciones de Uso</a>
+        <a href="#">Aviso de Privacidad</a>
+        <a href="#">Ayuda</a>
+    </div>
+    <p>&copy; 1996-2024 Amazon.com, Inc. o sus afiliados</p>
+</footer>
+
+</body>
+
+</html>

