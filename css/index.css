@@ -1,0 +1,228 @@
+
+@font-face {
+    font-family: 'Amazon1'; 
+    src: url('/Amazon/Font/Ember/AmazonEmber_Lt.ttf');
+    font-weight: normal; 
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.banner {
+   
+    position: relative;
+    width: 100%;
+  
+    overflow: hidden;
+}
+
+.banner img {
+
+    object-fit: cover;
+    width: 100%;
+    height: 10%;
+    height: 550px;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 1;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 350%);
+    color: white;
+    z-index: 2; /* Asegura que el texto esté encima */
+    font-size: 40px;
+    background-color: rgba(231, 143, 65, 0.8); /* Fondo rojo con 80% de opacidad */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.banner-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; /* Tamaño de la imagen ajustado según tu preferencia */
+    height: auto;
+    z-index: 2;
+}
+
+.general{
+    display: block;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; 
+    height: 50px;
+    background-color: #febd69;
+
+}
+.nav2{
+   
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+.nav2 a{
+   color: #070707;
+   text-decoration: none;
+   font-size: 14px;
+   margin-right:40px /* Ajusta el espacio entre los enlaces */
+
+}
+.nav2 i{
+    color: #050505;
+    text-decoration: none;
+    font-size: 18px;
+    
+ 
+ }
+
+.user-options {
+    color: #0a0a0a;
+    text-decoration: none;
+    align-items: center;
+    font-size: 14px;
+    margin-left:300px;
+    text-transform: none;
+}
+.user-options a {
+    color: #0a0a0a;
+    text-transform: none;
+    text-decoration: none;
+}
+.productos-text{
+    
+    background-color: rgba(249, 209, 168, 0.9); /* Fondo rojo con 80% de opacidad */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.productos-text p{
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        margin-right: 200px;
+        margin-left: 200px;
+}
+.products {
+    margin-right: 70px;
+    margin-left: 70px;
+    border: 1px solid #ffffff;
+    background-color: #f8f8f8;
+}
+.anuncio{
+    background-color: #f3a323;
+    
+}
+.anuncio p{
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: #f5f4f2;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.offers{
+    margin-right: 70px;
+    margin-left: 70px;
+    border: 1px solid #ffffff;
+    background-color: #f8f8f8;
+}
+h2 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:-90px;
+}
+.offer-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.product-item{
+    text-align: center;
+    width: 23%;
+    
+}
+.offer-item{
+    text-align: center;
+    width: 23%;
+}
+
+.product-item img{
+    width: 100%; /* Puedes ajustar el tamaño que desees */
+    height: 70%;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+    border-radius: 30%; /* Hace que la imagen sea redonda */
+    border: 2px solid #f89c07; /* Puedes añadir un borde opcional */
+    display: block;
+    margin: 0 auto; /* Si quieres centrar la imagen horizontalmente */
+    
+}
+.offer-item img{
+
+
+    width: 200px; /* Puedes ajustar el tamaño que desees */
+    height: 200px;
+ 
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+    border-radius: 30%; /* Hace que la imagen sea redonda */
+    border: 2px solid #f89c07; /* Puedes añadir un borde opcional */
+}
+footer {
+    background-color: #ff7e00;  /* Color al pasar el cursor */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    display: flex;
+
+}
+.footer-logo img{
+    width: 60px;
+
+}
+.footer-logo p{
+ 
+    font-size: 10px;
+}
+.footer-logo {
+    width: 400px;
+
+}
+.footer-links {
+    margin-top: 30px;
+    justify-content: center;
+}
+.footer-links a {
+    
+    color: rgb(1, 1, 1);
+    text-decoration: none;
+    margin: 0 10px;
+    display: block;
+    font-size: 11px;
+ 
+}
+
+

@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Amazon1'; 
+    src: url('/Amazon/Font/Ember/AmazonEmber_Lt.ttf');
+
+    font-weight: normal; 
+  }
+
+body {
+    font-family: 'Amazon1';
+    font-weight: normal; 
+    font-size: 15px;
+}
+.container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+.title {
+    font-family: 'Amazon1';
+    font-weight: bold; 
+    font-size: 30px;
+    
+    margin-bottom: 10px;
+}
+.code-input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-family: 'Amazon1';
+    font-weight: normal; 
+}
+.button {
+    background-color: #FFD814;
+    color: #333;
+    padding: 6px 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Amazon1';
+    font-weight: normal; 
+    
+}
+.button:hover {
+    background-color: #F7CA00;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px
+}
+.links {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.links a {
+    color: #006C80;
+    text-decoration: none; 
+}
+.links a:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+.logo {
+    text-align: center;
+}
+.logo img {
+    width: 150px;
+}
+.code1 {
+    margin-top: 20px;
+    font-size: 18px;
+    
+}
+.code1 a {
+    color: #006C80;
+    text-decoration: none; 
+}
+.code1 a:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}
+.code2 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.code2 a {
+    color: #006C80;
+    text-decoration: none; 
+}
+.code2 a:hover {
+    color: #C7511F;
+    text-decoration: underline;
+}

@@ -1,0 +1,248 @@
+
+@font-face {
+    font-family: 'Amazon1'; 
+    src: url('/Amazon/Font/Ember/AmazonEmber_Lt.ttf');
+    font-weight: normal; 
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.logo img {
+    width: 40px;
+    margin-left: 7px;
+}
+
+
+.general{
+    display: block;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efa152;
+    padding: 20px 20px;
+    z-index: 1;   
+    height: 20px;
+}
+   
+.nav2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+.nav2 a{
+   color: #070707;
+   text-decoration: none;
+   font-size: 14px;
+   margin-right:30px /* Ajusta el espacio entre los enlaces */
+}
+.nav2 i{
+    color: #050505;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right:40px /* Ajusta el espacio entre los enlaces */
+ 
+ }
+main {
+    background-color: #ffffff;
+   
+}
+
+.user-options {
+    position: relative;
+    display: flex;
+    
+}
+
+.user-options a {
+    color: #0a0a0a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.menu {
+    display: none; /* Inicialmente ocultamos el menú */
+    position: absolute;
+    right:30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    width: 400px; /* Ajusta el ancho del menú según sea necesario */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+}
+
+.banner-text{
+    margin-right: 170px;
+    margin-left: 170px;
+
+}
+p{
+ font-size: 15px;
+}
+.products, .offers {
+
+    margin-right: 60px;
+    margin-left: 60px;
+
+}
+
+h2 {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal; 
+    color: #eb6b20;
+    font-weight: bold;
+    
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.product-item {
+    text-align: center;
+    width: 23%;
+    margin-top: 30px;
+}
+
+.product-item img{
+    width: 250px; /* Puedes ajustar el tamaño que desees */
+    height: 300px;
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+    border-radius: 10%; /* Hace que la imagen sea redonda */
+    border: 2px solid #f89c07; /* Puedes añadir un borde opcional */
+
+}
+.product-item img:hover{
+    background-color: #fff;
+    border: 3px solid #f16609;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.btn-flotante {
+    position: fixed;  /* Posición fija para que siempre esté visible */
+    bottom: 20px;     /* Distancia desde la parte inferior de la pantalla */
+    right: 20px;      /* Distancia desde la parte derecha de la pantalla */
+    background-color: #ea7209;  /* Color de fondo */
+    color: white;     /* Color del texto */
+    padding: 15px 20px;  /* Espaciado interno */
+    border-radius: 50px;  /* Bordes redondeados */
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-decoration: none; /* Sin subrayado */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra */
+    transition: background-color 0.3s ease;  /* Transición suave al cambiar de color */
+}
+.btn-flotante1 {
+    position: fixed;  /* Posición fija para que siempre esté visible */
+    bottom: 70px;     /* Distancia desde la parte inferior de la pantalla */
+    right: 20px;      /* Distancia desde la parte derecha de la pantalla */
+    background-color: #ea7209;  /* Color de fondo */
+    color: white;     /* Color del texto */
+    padding: 15px 20px;  /* Espaciado interno */
+    border-radius: 50px;  /* Bordes redondeados */
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-decoration: none; /* Sin subrayado */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra */
+    transition: background-color 0.3s ease;  /* Transición suave al cambiar de color */
+}
+/* Efecto hover */
+.btn-flotante:hover {
+    background-color: #ff7e00;  /* Color al pasar el cursor */
+}
+footer {
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-huellas-patas-dibujadas-mano_23-2151286038.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725753600&semt=ais_hybrid);
+    color: rgb(14, 14, 14);
+    background-position:right;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-links a {
+    color: rgb(1, 1, 1);
+    text-decoration: none;
+    margin: 0 10px;
+    display: block;
+}
+
+.adopt-button {
+    background-color: #f47506; /* Color del botón */
+    color: #fff; /* Color del texto */
+    border: none;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para que se vea más bonito */
+}
+
+.adopt-button:hover {
+    background-color: #e08b06; /* Color al pasar el ratón */
+}
+@media screen and (max-width: 1024px) {
+    .banner {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .products, .offers {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .product-item, .offer-item {
+        width: 45%; /* Más anchas para tabletas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .products, .offers {
+        margin-right: 0px;
+        margin-left: 0px;
+        flex-direction: column
+    }
+    .nav1, .nav2 {
+        flex-direction: column; /* Cambia a diseño vertical en móviles */
+        height: auto;
+    }
+
+    .search-bar {
+        margin: 10px 0;
+    }
+
+    .product-item, .offer-item {
+        width: 100%; /* Para que los elementos ocupen toda la pantalla en móviles */
+    }
+
+    .menu {
+        width: 100%; /* Ajusta el menú en pantallas pequeñas */
+    }
+}

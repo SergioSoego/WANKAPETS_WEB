@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Amazon1'; 
+  src: url('/Amazon/Font/Ember/AmazonEmber_Lt.ttf');
+
+  font-weight: normal; 
+}
+
+body {
+  font-family: 'Amazon1';
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: rgba(248, 242, 242, 0.8); /* Fondo rojo con 80% de opacidad */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 150px;
+}
+h1 {
+  font-size: 2em;
+  font-family: 'Amazon1';
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #FFD814;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #F9A825;
+}
+
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+.footer a {
+  color: #0066CC; 
+  text-decoration: none;
+}
+
+
+.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+ 
+}
+.email-container a{
+  
+  text-decoration: none; 
+}
+.olvidaste {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+}
+
+.olvidaste a{
+  
+  text-decoration: none; 
+}

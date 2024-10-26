@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Amazon1'; 
+    src: url('/Amazon/Font/Ember/AmazonEmber_Lt.ttf');
+
+    font-weight: normal; 
+  }
+  
+  .main_container{
+    
+    display: flex;
+    justify-content: space-between;
+    background-image: url(https://cdn.pixabay.com/photo/2019/09/21/18/58/dog-4494554_1280.jpg);
+    background-size: cover;
+  }
+  body {
+    font-family: 'Amazon1';
+    font-weight: normal; 
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: rgba(248, 242, 242, 0.8); /* Fondo rojo con 80% de opacidad */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  .logo {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  h1 {
+    font-family: 'Amazon1';
+    font-weight: normal; 
+    text-align: left;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2px;
+    font-weight:bold;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+  
+  }
+
+  label {
+    font-family: 'Amazon1';
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight:bold;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    background-color: #fa860a;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #e65d08;
+  }
+
+  .info {
+    text-align: left; 
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .info a {
+    color: #0066CC;
+    text-decoration: none;
+  }
+
+  .info a:hover {
+    text-decoration: underline;
+  }
+
+  .separator {
+    width: 400px;
+    margin: 20px auto;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    line-height: 0;
+  }
+
+  .separator span {
+    background: #fff;
+    padding: 0 10px;
+    color: #555;
+    font-size: 14px;
+  }
+
+  .new-account-button {
+    background-color: #faf6f6; 
+    color: #111;
+    padding: 10px 10px; 
+    border: 1px solid #adaaaa; 
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; /* Ajusta el ancho al contenido */
+    text-align: center;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .new-account-button:hover {
+    background-color: #f7f7f7;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
+  }
+
+  .footer a {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }

@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Amazon1'; 
+    src: url('/Amazon/Font/Ember/AmazonEmber_Lt.ttf');
+
+    font-weight: normal; 
+  }
+.main_container{
+    
+    display: flex;
+    justify-content: space-between;
+    background-image: url(https://cdn.pixabay.com/photo/2019/09/21/18/58/dog-4494554_1280.jpg);
+
+}
+body {
+    font-family: 'Amazon1';
+    font-weight: normal; 
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.flex2{
+    display: block;
+}
+.logo {
+ text-align: center;
+}
+.logo img {
+ width: 100px;
+ }
+
+  .container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: rgba(248, 242, 242, 0.8); /* Fondo rojo con 80% de opacidad */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: start;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 20px;
+    font-family: 'Amazon1';
+    font-weight: bold; 
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+.form-group label {
+    display: block;
+    font-size:12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #080707;
+    font-family: 'Amazon1';
+    font-weight: bold; 
+    
+}
+
+.form-group input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #0073bb;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #da6666;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group .error {
+    color: red;
+    font-size: 0.875em;
+    margin-top: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 8px;
+    background-color: #FFD814;
+    border: none;
+    font-family: 'Amazon1';
+    font-weight: normal;
+    border-radius: 4px;
+    color: #050505;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.form-group button:hover {
+    background-color: #ea991e;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+    color: #0073bb;
+}
+
+.login-link a {
+    color: #0073bb;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.additional-info {
+    font-size: 13px;
+    color: #040404;
+    margin-top: 10px;
+    font-family: 'Amazon1';
+    font-weight: normal; 
+}
+
+.additional-info a {
+    color: #0073bb;
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    text-decoration: underline;
+}
