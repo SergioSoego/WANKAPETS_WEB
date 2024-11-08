@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sssssssss", $nombre, $tipo_mascota, $color, $raza, $distrito, $direccion_ultima_vista, $imagen_mascota, $fecha_perdida, $hora_perdida);
 
     if ($stmt->execute()) {
-        echo "<script>alert('Los datos han sido insertados correctamente.'); window.location.href = '../AnimalesPerdidos.html';</script>";
+        echo "<script>alert('Los datos han sido insertados correctamente.'); window.location.href = '../AnimalesPerdidos.php';</script>";
     } else {
         echo "<script>alert('Error al insertar los datos en la base de datos.');</script>";
     }
