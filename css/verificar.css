@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Amazon1'; 
-    src: url('/Amazon/Font/Ember/AmazonEmber_Lt.ttf');
-
-    font-weight: normal; 
-  }
 
 body {
     font-family: 'Amazon1';

@@ -1,11 +1,17 @@
 <?php
-session_start();
+session_start();  
 
-// Suponiendo que obtienes el email de algún lugar y lo guardas en $_SESSION['email']
-$_SESSION['email'] = "72226067@continental.edu.pe";
+
+if (isset($_SESSION['email'])) {
+    $email = $_SESSION['email'];  
+} else {
+    echo "No se ha encontrado el correo en la sesión.";
+    exit();
+}
 ?>
+
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Amazon Login</title>
@@ -16,8 +22,8 @@ $_SESSION['email'] = "72226067@continental.edu.pe";
       if (storedEmail) {
         var emailElement = document.querySelector(".email");
         emailElement.textContent = storedEmail;
-        document.getElementById("hidden-email").value = storedEmail; // Guarda el correo en un input oculto
-        // Guardar el correo en la sesión (opcional si lo necesitas en JS)
+        document.getElementById("hidden-email").value = storedEmail; 
+        
         sessionStorage.setItem('email', storedEmail);
       }
     });
@@ -29,9 +35,9 @@ $_SESSION['email'] = "72226067@continental.edu.pe";
       console.log("Email: " + email);
       console.log("Password: " + password);
 
-      // Puedes agregar más validaciones aquí si es necesario
+      
 
-      return true; // Devuelve true para enviar el formulario
+      return true; 
     }
   </script>
 </head>
@@ -44,7 +50,7 @@ $_SESSION['email'] = "72226067@continental.edu.pe";
   <div class="container">
     <h1>Iniciar sesión</h1>
     <div class="email-container">
-      <span class="email"><?php echo $_SESSION['email']; ?></span>
+      <span class="email"><?php echo $email; ?></span>  
       <a href="login.html">Cambiar</a>
     </div>
     <div class="olvidaste">
@@ -53,7 +59,7 @@ $_SESSION['email'] = "72226067@continental.edu.pe";
     </div>
     <form action="BACK/estadoverificacion.php" method="post" onsubmit="return validarFormulario()">
       <div class="input-group">
-        <input type="hidden" name="email" id="hidden-email" value="<?php echo $_SESSION['email']; ?>">
+        <input type="hidden" name="email" id="hidden-email" value="<?php echo $email; ?>">  
         <input type="password" name="password" required>
       </div>
       <button type="submit">Iniciar sesión</button>

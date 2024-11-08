@@ -19,7 +19,7 @@ if (!isset($_POST['password']) || !isset($_SESSION['email'])) {
 $email = $_SESSION['email'];
 $input_password = $_POST['password'];
 
-// Verificar la contraseña
+
 $sql = "SELECT password FROM usuarios WHERE email = ?";
 $stmt = $conn->prepare($sql);
 if (!$stmt) {
@@ -35,18 +35,18 @@ if ($stmt->num_rows > 0) {
     $stmt->fetch();
 
     if (password_verify($input_password, $hashed_password)) {
-        // Generar código de 6 dígitos
+        
         $verification_code = rand(100000, 999999);
 
-        // Guardar el código de verificación en la sesión
+        
         $_SESSION['verification_code'] = $verification_code;
 
-        // Actualizar el código de verificación en la base de datos
+        
         $update_stmt = $conn->prepare("UPDATE usuarios SET two_factor_key = ? WHERE email = ?");
         $update_stmt->bind_param("ss", $verification_code, $email);
         
         if ($update_stmt->execute()) {
-            // Enviar correo electrónico con el código de verificación
+            
             $to = $email;
             $subject = "Código de verificación";
             $message = "Tu código de verificación es: " . $verification_code;

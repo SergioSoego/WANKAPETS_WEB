@@ -36,21 +36,27 @@ session_start();
             <div class="nav2">
                 <ul>
                     <a href="index.php">Inicio</a>
-                    <a href=" Quienesomos.html">Quienes somos</a>
+                    <a href="Quienesomos.html">Quienes somos</a>
                     <a href="">Contactanos</a>
                     <a href="Adoptar.php">Adoptar</a>
                     <a href="AnimalesPerdidos.html">Mascotas Perdidas</a>
-    
                 </ul>
             </div>
             <div class="user-options">
                 <div class="user">
                     <i class="fas fa-user"></i>
-                    <a href="login.html">Iniciar Sesion</a>
+                    <?php if (isset($_SESSION['nombre'])): ?>
+                        
+                        <span id="nombre"><?php echo htmlspecialchars($_SESSION['nombre']); ?></span>
+                        <a href="logout.php">Cerrar sesión</a>
+
+                    <?php else: ?>
+                        
+                        <a href="login.html">Iniciar Sesión</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </section>
-    
 </section>
 </header> 
 
@@ -142,17 +148,16 @@ session_start();
 <footer>
     <div class="footer-logo">       
         <img src="imagenes/logo2.png" alt="">
-        <p>Somos una fundación procupada por la protección y defensa del bienestar animal. Identificamos, registramos y contribuimos a la localización de mascotas en el territorio Peruano.</p>
+        <p>Somos una fundación preocupada por la protección y defensa del bienestar animal. Identificamos, registramos y contribuimos a la localización de mascotas en el territorio Peruano.</p>
     </div>
     <div class="footer-links">
         <a href="index.php">Inicio</a>
-        <a href=" Quienesomos.html">Quienes somos</a>
+        <a href="Quienesomos.html">Quienes somos</a>
         <a href="">Contactanos</a>
         <a href="Adoptar.php">Adoptar</a>
         <a href="AnimalesPerdidos.html">Mascotas Perdidas</a>
     </div>
 </footer>
-
 
 </body>
 

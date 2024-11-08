@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root";
     $password_db = ""; 
-    $dbname = "Amazon";
+    $dbname = "wankapets";
 
     $conn = new mysqli($servername, $username, $password_db, $dbname);
 
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $to = $email;
         $subject = "Código de verificación";
         $message = "Tu código de verificación es: " . $verification_code;
-        $headers = "From: sergioaldair21@gmail.com";
+        $headers = "From: jordangeralmy2002@gmail.com";
 
         if (mail($to, $subject, $message, $headers)) {
             echo "Correo enviado exitosamente.";

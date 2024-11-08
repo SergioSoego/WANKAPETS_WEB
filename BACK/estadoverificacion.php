@@ -6,14 +6,14 @@ $username = "root";
 $password = "";
 $dbname = "wankapets";
 
-// Establecer conexión
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Verificar que se recibieron los datos del formulario
+
 if (!isset($_POST['password']) || !isset($_SESSION['email'])) {
     die("Datos del formulario no recibidos.");
 }
@@ -21,7 +21,11 @@ if (!isset($_POST['password']) || !isset($_SESSION['email'])) {
 $email = $_SESSION['email'];
 $input_password = $_POST['password'];
 
-// Verificar la contraseña
+echo "<div style='border: 1px solid #000; padding: 10px; margin: 20px; background-color: #f8f8f8;'>
+        <strong>Usuario recibido:</strong> $email
+      </div>";
+
+
 $sql = "SELECT password FROM usuarios WHERE email = ?";
 $stmt = $conn->prepare($sql);
 if (!$stmt) {
@@ -37,18 +41,18 @@ if ($stmt->num_rows > 0) {
     $stmt->fetch();
 
     if (password_verify($input_password, $hashed_password)) {
-        // Generar código de 6 dígitos para la verificación
+        
         $verification_code = rand(100000, 999999);
 
-        // Guardar el código de verificación en la sesión
+        
         $_SESSION['verification_code'] = $verification_code;
 
-        // Actualizar el código de verificación en la base de datos
+        
         $update_stmt = $conn->prepare("UPDATE usuarios SET two_factor_key = ? WHERE email = ?");
         $update_stmt->bind_param("ss", $verification_code, $email);
         
         if ($update_stmt->execute()) {
-            // Enviar correo electrónico con el código de verificación
+            
             $to = $email;
             $subject = "Código de verificación";
             $message = "Tu código de verificación es: " . $verification_code;
@@ -66,10 +70,10 @@ if ($stmt->num_rows > 0) {
             echo "Error al actualizar el código de verificación en la base de datos.";
         }
     } else {
-        echo "<script>alert('Contraseña incorrecta'); window.location.href = '../login.html';</script>";
+        echo "<script>alert('Contraseña incorrecta.'); window.location.href = '../login.html';</script>";
     }
 } else {
-    echo "Usuario no encontrado.";
+    echo "<script>alert('Usuario no encontrado: $email. Por favor, verifica tu email.'); window.location.href = '../login.html';</script>";
 }
 
 $stmt->close();
