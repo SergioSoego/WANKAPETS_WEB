@@ -35,7 +35,7 @@ session_start();
                     <a href=" Quienesomos.html">Quienes somos</a>
                     <a href="">Contactanos</a>
                     <a href="Adoptar.php">Adoptar</a>
-                    <a href="registraranimalesperdidos.html">Registrar Mascotas Perdidas</a>
+                    <a href="AnimalesPerdidos.php">Mascotas Perdidas</a>
     
                 </ul>
             </div>
