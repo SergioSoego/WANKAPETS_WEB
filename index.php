@@ -36,10 +36,10 @@ session_start();
             <div class="nav2">
                 <ul>
                     <a href="index.php">Inicio</a>
-                    <a href="Quienesomos.html">Quienes somos</a>
+                    <a href=" Quienesomos.html">Quienes somos</a>
                     <a href="">Contactanos</a>
                     <a href="Adoptar.php">Adoptar</a>
-                    <a href="AnimalesPerdidos.html">Mascotas Perdidas</a>
+                    <a href="AnimalesPerdidos.php">Mascotas Perdidas</a>
                 </ul>
             </div>
             <div class="user-options">
