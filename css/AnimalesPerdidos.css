@@ -1,11 +1,8 @@
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .logo img {
@@ -13,41 +10,40 @@ body {
     margin-left: 7px;
 }
 
-
-.general{
+.general {
     display: block;
 }
-.nav1{
+
+.nav1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1; 
+    z-index: 1;
     height: 50px;
     background-color: #febd69;
-    
 }
-   
-.nav2{
+
+.nav2 {
     align-items: center;
     justify-content: space-between;
-
 }
-.nav2 a{
+
+.nav2 a {
     color: #070707;
     text-decoration: none;
     font-size: 14px;
-    margin-right:40px /* Ajusta el espacio entre los enlaces */
+    margin-right: 40px;
 }
-.nav2 i{
+
+.nav2 i {
     color: #050505;
     text-decoration: none;
     font-size: 18px;
-    margin-right:40px /* Ajusta el espacio entre los enlaces */
- 
- }
+    margin-right: 40px;
+}
+
 main {
     background-color: #ffffff;
-   
 }
 
 .user-options {
@@ -55,7 +51,7 @@ main {
     text-decoration: none;
     align-items: center;
     font-size: 14px;
-    margin-left:300px;
+    margin-left: 300px;
     text-transform: none;
 }
 
@@ -66,40 +62,37 @@ main {
 }
 
 .menu {
-    display: none; /* Inicialmente ocultamos el menú */
+    display: none;
     position: absolute;
-    right:30px;
+    right: 30px;
     background-color: #fff;
     border: 1px solid #ddd;
     z-index: 1000;
-    width: 400px; /* Ajusta el ancho del menú según sea necesario */
+    width: 400px;
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.banner-text{
+.banner-text {
     margin-right: 170px;
     margin-left: 170px;
+}
 
+p {
+    font-size: 15px;
 }
-p{
- font-size: 15px;
-}
+
 .products, .offers {
-
     margin-right: 90px;
     margin-left: 90px;
     grid-row: 20px;
-
 }
 
 h2 {
-    font-family:'Times New Roman', Times, serif;
-    font-weight: normal; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
     color: #f1770c;
     font-weight: bold;
-    
     text-align: center;
     font-size: 20px;
 }
@@ -118,93 +111,95 @@ h2 {
     margin-top: 20px;
 }
 
-.product-item img{
-    width: 100%; /* Puedes ajustar el tamaño que desees */
+.product-item img {
+    width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
-    border-radius: 10%; /* Hace que la imagen sea redonda */
-    border: 2px solid #f89c07; /* Puedes añadir un borde opcional */
-
+    object-fit: cover;
+    border-radius: 10%;
+    border: 2px solid #f89c07;
 }
-.product-item img:hover{
+
+.product-item img:hover {
     background-color: #fff;
     border: 3px solid #f16609;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .btn-flotante {
-    position: fixed;  /* Posición fija para que siempre esté visible */
-    bottom: 20px;     /* Distancia desde la parte inferior de la pantalla */
-    right: 20px;      /* Distancia desde la parte derecha de la pantalla */
-    background-color: #ea7209;  /* Color de fondo */
-    color: white;     /* Color del texto */
-    padding: 15px 20px;  /* Espaciado interno */
-    border-radius: 50px;  /* Bordes redondeados */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ea7209;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
     text-align: center;
     font-size: 14px;
     font-family: Arial, sans-serif;
-    text-decoration: none; /* Sin subrayado */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra */
-    transition: background-color 0.3s ease;  /* Transición suave al cambiar de color */
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
+
 .btn-flotante1 {
-    position: fixed;  /* Posición fija para que siempre esté visible */
-    bottom: 70px;     /* Distancia desde la parte inferior de la pantalla */
-    right: 20px;      /* Distancia desde la parte derecha de la pantalla */
-    background-color: #ea7209;  /* Color de fondo */
-    color: white;     /* Color del texto */
-    padding: 15px 20px;  /* Espaciado interno */
-    border-radius: 50px;  /* Bordes redondeados */
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: #ea7209;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
     text-align: center;
     font-size: 14px;
     font-family: Arial, sans-serif;
-    text-decoration: none; /* Sin subrayado */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra */
-    transition: background-color 0.3s ease;  /* Transición suave al cambiar de color */
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
-/* Efecto hover */
+
 .btn-flotante:hover {
-    background-color: #ff7e00;  /* Color al pasar el cursor */
+    background-color: #ff7e00;
 }
+
 footer {
-    background-color: #ff7e00;  /* Color al pasar el cursor */
+    background-color: #ff7e00;
     justify-content: center;
     text-align: center;
     width: 100%;
     justify-content: space-evenly;
     margin-top: 40px;
     display: flex;
-
 }
-.footer-logo img{
+
+.footer-logo img {
     width: 60px;
-
 }
-.footer-logo p{
- 
+
+.footer-logo p {
     font-size: 10px;
 }
+
 .footer-logo {
     width: 400px;
-
 }
+
 .footer-links {
     margin-top: 30px;
     justify-content: center;
 }
+
 .footer-links a {
-    
     color: rgb(1, 1, 1);
     text-decoration: none;
     margin: 0 10px;
     display: block;
     font-size: 11px;
- 
 }
 
 .adopt-button {
-    background-color: #f47506; /* Color del botón */
-    color: #fff; /* Color del texto */
+    background-color: #f47506;
+    color: #fff;
     border: none;
     font-size: 14px;
     width: 100px;
@@ -212,12 +207,13 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para que se vea más bonito */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .adopt-button:hover {
-    background-color: #e08b06; /* Color al pasar el ratón */
+    background-color: #e08b06;
 }
+
 @media screen and (max-width: 1024px) {
     .banner {
         margin-right: 50px;
@@ -230,7 +226,7 @@ footer {
     }
 
     .product-item, .offer-item {
-        width: 45%; /* Más anchas para tabletas */
+        width: 45%;
     }
 }
 
@@ -243,10 +239,11 @@ footer {
     .products, .offers {
         margin-right: 0px;
         margin-left: 0px;
-        flex-direction: column
+        flex-direction: column;
     }
+
     .nav1, .nav2 {
-        flex-direction: column; /* Cambia a diseño vertical en móviles */
+        flex-direction: column;
         height: auto;
     }
 
@@ -255,10 +252,10 @@ footer {
     }
 
     .product-item, .offer-item {
-        width: 100%; /* Para que los elementos ocupen toda la pantalla en móviles */
+        width: 100%;
     }
 
     .menu {
-        width: 100%; /* Ajusta el menú en pantallas pequeñas */
+        width: 100%;
     }
 }

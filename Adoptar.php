@@ -171,6 +171,7 @@ session_start();
         <a href="#">Aviso de Privacidad</a>
         <a href="#">Ayuda</a>
 
+    <p>&copy; 1996-2024 Amazon.com, Inc. o sus afiliados</p>
     
 </footer>
 
