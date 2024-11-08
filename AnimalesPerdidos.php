@@ -95,7 +95,7 @@ $result = $conn->query($sql);
 </section>
 
 <a href="registraranimalesperdidos.html" class="btn-flotante">Registrar animal perdido</a>
-<a href="registraranimalesperdidos.html" class="btn-flotante1">Detectar animal perdido</a>
+<a href="https://sergiosoego.github.io/WankaAI/" class="btn-flotante1">Detectar Raza / AI</a>
 </main>
 
 <footer>
